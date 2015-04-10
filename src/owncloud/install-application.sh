@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="8.0.0"
+VERSION=`cat /root/owncloud-version.txt`
 
 echo "Extracting ownCloud ${VERSION}..."
 cd /data
