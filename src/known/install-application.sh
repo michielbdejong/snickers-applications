@@ -3,9 +3,9 @@
 echo "Extracting Known..."
 cd /data/www-content
 tar xzf /known.tgz
-mv Known-0.7.5/* .
-mv Known-0.7.5/.* .
-rmdir Known-0.7.5
+mv Known-0.7.6/* .
+mv Known-0.7.6/.* .
+rmdir Known-0.7.6
 
 echo "Setting default config..."
 cp /config.ini .
