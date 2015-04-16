@@ -36,6 +36,8 @@ RUN apt-get update \
 COPY apache.conf /etc/apache2/sites-enabled/000-default.conf
 COPY run.sh /run.sh
 COPY backup.sh /backup.sh
+RUN sed -i 's/^upload_max_filesize = .*/upload_max_filesize = 16M/' /etc/php5/apache2/php.ini
+RUN sed -i 's/^post_max_size = .*/post_max_size = 16M/' /etc/php5/apache2/php.ini
 RUN sed -i "s/variables_order.*/variables_order = \"EGPCS\"/g" /etc/php5/apache2/php.ini \
 	&& a2enmod rewrite
 
