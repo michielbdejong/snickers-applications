@@ -1,2 +1,2 @@
-# snickers-applications
-Dockerfiles for applications that can be hooked into snickers as backends
+# Deprecated
+Merged into https://github.com/indiehosters/applications
